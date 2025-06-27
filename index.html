@@ -1,0 +1,961 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vishal More</title>
+
+    <!-- bootstrap css cdn link  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <!-- custom css file -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- google font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- bootstrap icon cdn link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css"
+    />
+
+    <!-- for adding animation to website we have use AOS library 
+    AOS Library css file cdn link -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- jquery cdn link  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  </head>
+  <body>
+    <!-- navbar starts -->
+    <nav
+      id="navbar-top"
+      class="navbar navbar-expand-lg navbar-light bg-white sticky-top"
+    >
+      <div class="container-fluid px-5">
+        <a class="navbar-brand fw-bold fs-2" href="#" style="color: #3f396d">
+          <i class="fas fa-user-circle me-2" style="color: #fca61f;"></i> Vishal More
+        </a>
+        <button
+          class="nav-menu d-md-none"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <i class="bi bi-menu-button-fill"></i>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-center"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav gap-4" style="font-size: 1.1rem">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#service">Experties</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#portfolio">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#experience">Experience</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact" >Contact</a>
+            </li>
+
+            
+          </ul>
+        </div>
+        <div class="d-none d-md-block">
+          <button class="c-btn h-btn rounded-pill px-4 py-2">
+            <a href="resume.pdf" download="vishal_resume.pdf" style="text-decoration: none; color: #fff;">Resume</a>
+          </button>
+      </div>
+    </nav>
+    <!-- navbar ends here -->
+
+    <!-- home section starts  -->
+    <section class="home pt-5 pb-5" id="home">
+      <div class="row justify-content-evenly align-middle">
+        <!-- here data-aos is used for adding aos animation  -->
+        <div class="col-10 col-md-6 text-center text-md-start" data-aos="slide-right">
+          <h2 style="color: #3f396d">
+            Hello! I Am <br />
+            <span class="c-orange title-animate">
+              <span id="animated-title">Data Scientist</span>
+            </span>
+          </h2>
+          <p class="text-muted">
+            I am a Data Science and AI enthusiast with experience in scalable AI/ML solutions, data analytics, and dashboard development. 
+            Proficient in Python, SQL, Power BI, and MLOps tools. Passionate about NLP, deep learning, and deploying AI technologies.
+          </p>
+          <button class="c-btn h-btn mt-3 py-3 px-5 rounded-pill">
+            <a href="#contact" style="text-decoration: none; color: #fff;">Hire Me</a>
+          </button>
+          <a href="" class="link ms-4 d-none">See My Work</a>
+        </div>
+        <div class="col-10 col-md-4 d-none d-md-block">
+          <img src="images/banner-01.png" class="img-fluid" alt="" />
+        </div>
+      </div>
+    </section>
+    <!-- home section ends here -->
+
+    <!-- expertise section starts -->
+    <section class="expertise mt-5" id="service">
+      <div class="heading text-center">
+        <small>My Expertise</small>
+        <h3>
+          Delivering Value with <br />
+          Data Science & AI Solutions
+        </h3>
+      </div>
+      <div class="row justify-content-evenly mt-5">
+        <div class="col-10 col-md-4" data-aos="fade-up">
+          <div class="service-card">
+            <div class="img">
+              <img
+                src="images/service-icon1.png"
+                class="w-25 img-fluid img"
+                alt="Machine Learning"
+              />
+            </div>
+            <div class="content mt-3">
+              <h4>Machine Learning</h4>
+              <p class="text-muted">
+                Building predictive models, classification, regression, and clustering using Python, scikit-learn, and TensorFlow.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-10" data-aos="fade-up">
+          <div class="service-card">
+            <div class="img">
+              <img
+                src="images/service-icon2.png"
+                class="w-25 img-fluid img"
+                alt="Natural Language Processing"
+              />
+            </div>
+            <div class="content mt-3">
+              <h4>Data Analysis</h4>
+              <p class="text-muted">
+                Analyzing large datasets, extracting insights, and creating visualizations using Python, Pandas, NumPy, and Power BI.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-10" data-aos="fade-up">
+          <div class="service-card">
+            <div class="img">
+              <img
+                src="images/service-icon3.png"
+                class="w-25 img-fluid img"
+                alt=""
+              />
+            </div>
+            <div class="content mt-3">
+              <h4>Artificial Intelligence</h4>
+              <p class="text-muted">
+                Developing AI-driven solutions, data pipelines, and dashboards for actionable insights and business intelligence.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- expertise section ends here -->
+
+        <!-- skill section starts -->
+        <section class="skill mt-5 py-5" id="about">
+      <div class="row justify-content-evenly">
+        <!-- Circular Progress Skills -->
+        <div class="col-10 col-md-5 skill-with-progress" data-aos="slide-right">
+          <div class="row justify-content-evenly">
+            <!-- Row 1 -->
+            <div class="col-10 col-md-10 mb-4">
+            <h5 class="skill-header">Programming Languages</h5>
+            <div class="d-flex flex-wrap gap-3">
+              <div class="skill-badge">
+                <img src="icons/python.png" alt="Python" />
+                <span>Python</span>
+              </div>
+              <div class="skill-badge">
+                <img src="icons/html.png" alt="HTML" />
+                <span>HTML</span>
+              </div>
+              <div class="skill-badge">
+                <img src="icons/css.png" alt="CSS" />
+                <span>CSS</span>
+              </div>
+              <div class="skill-badge">
+                <img src="icons/sql.png" alt="SQL" />
+                <span>SQL</span>
+              </div>
+              <div class="skill-badge">
+                <img src="icons/javascript.png" alt="JavaScript" />
+                <span>JavaScript</span>
+              </div>
+            </div>
+          </div>
+          <!-- Tools & Technologies -->
+          <div class="col-10 col-md-10 mb-4">
+            <h5 class="skill-header">Tools & Technologies</h5>
+            <div class="d-flex flex-wrap gap-2">
+              <div class="skill-badge">
+                <img src="icons/powerbi.png" alt="Power BI" />
+                <span>Power BI</span>
+              </div>
+              <div class="skill-badge">
+                <img src="icons/etl.png" alt="ETL" />
+                <span>ETL</span>
+              </div>
+              <div class="skill-badge">
+                <img src="icons/flask.png" alt="Flask" />
+                <span>Flask</span>
+              </div>
+              <div class="skill-badge">
+                <img src="icons/django.png" alt="Django" />
+                <span>Django</span>
+              </div>
+              <div class="skill-badge">
+                <img src="icons/streamlit.png" alt="Streamlit" />
+                <span>Streamlit</span>
+              </div>
+              <div class="skill-badge">
+                <img src="icons/gradio.png" alt="Gradio" />
+                <span>Gradio</span>
+              </div>
+            </div>
+          </div>
+            <!-- Row 2 -->
+            <!-- Machine Learning & AI -->
+          <div class="col-10 col-md-10 mb-4">
+            <h5 class="skill-header">Machine Learning & AI</h5>
+            <div class="d-flex flex-wrap gap-2">
+              <div class="skill-badge">
+                <img src="icons/ml.png" alt="Machine Learning" />
+                <span>Machine Learning</span>
+              </div>
+              <div class="skill-badge">
+                <img src="icons/dl.png" alt="Deep Learning" />
+                <span>Deep Learning</span>
+              </div>
+              <div class="skill-badge">
+                <img src="icons/nlp.png" alt="NLP" />
+                <span>NLP</span>
+              </div>
+              <div class="skill-badge">
+                <img src="icons/opencv.png" alt="OpenCV" />
+                <span>OpenCV</span>
+              </div>
+              <div class="skill-badge">
+                <img src="icons/huggingface.png" alt="Hugging Face" />
+                <span>Hugging Face</span>
+              </div>
+            </div>
+          </div>
+            <!-- Frameworks & Libraries -->
+          <div class="col-10 col-md-10 mb-4">
+            <h5 class="skill-header">Frameworks & Libraries</h5>
+            <div class="d-flex flex-wrap gap-2">
+              <div class="skill-badge">
+                <img src="icons/tensorflow.png" alt="TensorFlow" />
+                <span>TensorFlow</span>
+              </div>
+              <div class="skill-badge">
+                <img src="icons/pytorch.png" alt="PyTorch" />
+                <span>PyTorch</span>
+              </div>
+              <div class="skill-badge">
+                <img src="icons/keras.png" alt="Keras" />
+                <span>Keras</span>
+              </div>
+              <div class="skill-badge">
+                <img src="icons/scikit.png" alt="Scikit-learn" />
+                <span>Scikit-learn</span>
+              </div>
+              <div class="skill-badge">
+                <img src="icons/numpy.png" alt="NumPy" />
+                <span>NumPy</span>
+              </div>
+              <div class="skill-badge">
+                <img src="icons/pandas.png" alt="Pandas" />
+                <span>Pandas</span>
+              </div>
+            </div>
+          </div>
+
+            <!-- DevOps & MLOps -->
+          <div class="col-10 col-md-10 mb-4">
+            <h5 class="skill-header">DevOps & MLOps</h5>
+            <div class="d-flex flex-wrap gap-2">
+              <div class="skill-badge">
+                <img src="icons/docker.png" alt="Docker" />
+                <span>Docker</span>
+              </div>
+              <div class="skill-badge">
+                <img src="icons/mlflow.png" alt="MLflow" />
+                <span>MLflow</span>
+              </div>
+              <div class="skill-badge">
+                <img src="icons/github.png" alt="GitHub" />
+                <span>GitHub</span>
+              </div>
+              <div class="skill-badge">
+                <img src="icons/aws.png" alt="AWS" />
+                <span>AWS</span>
+              </div>
+              <div class="skill-badge">
+                <img src="icons/jenkins.png" alt="Jenkins" />
+                <span>Jenkins</span>
+              </div>
+              <div class="skill-badge">
+                <img src="icons/kubernetes.png" alt="Kubernetes" />
+                <span>Kubernetes</span>
+              </div>
+            </div>
+          </div>
+            
+          </div>
+        </div>
+        <div class="col-10 col-md-5 skill-detail" data-aos="slide-left">
+          <div class="heading mt-5 mt-md-3">
+            <small>My Skills</small>
+            <h3>Data Science & AI Expertise</h3>
+            <p class="text-muted">
+              Proficient in Python for data analysis, machine learning, and automation. Experienced with scikit-learn, TensorFlow, and PyTorch for building and deploying ML models. Skilled in NLP, deep learning, and MLOps practices. Strong background in data visualization using Power BI, Tableau, and Python libraries.
+
+            </p>
+            <p class="text-muted">
+              Adept at transforming raw data into actionable insights and delivering end-to-end AI solutions for real-world problems.
+            </p>
+            <button class="c-btn h-btn mt-3 py-3 px-5 rounded-pill">
+              <!-- here download attribute is used for adding download functionality to button  -->
+              <a
+                href="resume_vishal.pdf"
+                download="vishal_resume.pdf"
+                style="text-decoration: none;color: #fff;"
+                >Download CV</a
+              >
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- skill section end here -->
+
+    <!-- portfolio section starts here -->
+    <section class="portfolio" id="portfolio">
+      <div class="heading text-center pt-5">
+        <small>Creative Work</small>
+        <h3>Check My Portfolio</h3>
+      </div>
+
+      <div id="myBtnContainer" class="text-center mt-4">
+      <!-- here we will create custom attribute using data- for filtering -->
+      <button class="filter-item" data-filter="all">All</button>
+      <button class="filter-item" data-filter="ml">Machine Learning</button>
+      <button class="filter-item" data-filter="nlp">NLP</button>
+      <button class="filter-item" data-filter="AI">AI</button>
+      <button class="filter-item" data-filter="viz">Data Visualization</button>
+    </div>
+      <div class="portfolio-body">
+        <div class="row justify-content-evenly px-4">
+          <div class="post col-md-4 nlp all col-10 mt-3 mt-md-0" data-aos="fade-up">
+            <div class="card">
+              <img src="images/project1nlp.png" class="card-img-top" alt="..." />
+              <div class="card-body text-center">
+                <h4 class="card-title">Nigotiation chatbot</h4>
+                <span class="badge bg-secondary badge-pill">HTML&CSS</span>
+                <span class="badge bg-secondary badge-pill">Python</span>
+                <span class="badge bg-secondary badge-pill mb-2">NLP&HuggingFace </span
+                ><br />
+                <a href="https://github.com/Vishal2053/Negotiation-Chatbot-Using-a-Pre-trained-AI-Model" class="link">Read More</a>
+              </div>
+            </div>
+          </div>
+          <div class="post col-md-4 AI all col-10 mt-3 mt-md-0" data-aos="fade-up">
+            <div class="card">
+              <img
+                src="images/projectai1.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body text-center">
+                <h4 class="card-title">AI Virtual Interview Assistant</h4>
+                <span class="badge bg-secondary badge-pill">HTML&CSS</span>
+                <span class="badge bg-secondary badge-pill">JavaScript</span>
+                <span class="badge bg-secondary badge-pill mb-2">Python&LLM</span>
+                <br />
+                <a href="https://virtual-interview-platform.onrender.com/" class="read-more-btn link mt-3 me-3 d-inline-block">View Project</a>
+                <a href="https://github.com/Vishal2053/Virtual-Interview-Platform" class="read-more-btn link mt-3 d-inline-block">Read More</a>
+              </div>
+            </div>
+          </div>
+          <div class="post col-md-4 AI all col-10 mt-3 mt-md-0" data-aos="fade-up">
+            <div class="card">
+              <img src="images/project2.jpg" class="card-img-top" alt="..." />
+              <div class="card-body text-center">
+                <h4 class="card-title">Text-To-SQL-LLM-APP</h4>
+                <span class="badge bg-secondary badge-pill">Streamlit</span>
+                <span class="badge bg-secondary badge-pill">Python</span>
+                <span class="badge bg-secondary badge-pill mb-2">Genarative AI</span
+                ><br />
+                <a href="https://github.com/Vishal2053/Text-To-SQL-LLM-APP" class="read-more-btn link">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-evenly mt-4 px-4">
+          <div class="post col-md-4 ml all col-10 mt-3 mt-md-0" data-aos="fade-up">
+            <div class="card">
+              <img src="images/project3.jpg" class="card-img-top" alt="..." />
+              <div class="card-body text-center">
+                <h4 class="card-title">Kidney-Disease-Classification-Project</h4>
+                <span class="badge bg-secondary badge-pill">HTML&CSS</span>
+                <span class="badge bg-secondary badge-pill">Python</span>
+                <span class="badge bg-secondary badge-pill mb-2">Flask</span>
+                <br />
+                <a href="https://github.com/Vishal2053/Kidney-Disease-Classification-Deep-Learning-Project" class="read-more-btn link mt-2 d-inline-block">Read More</a>
+              </div>
+            </div>
+          </div>
+          <div class="post col-md-4 viz all col-10 mt-3 mt-md-0" data-aos="fade-up">
+            <div class="card">
+              <img src="images/project4.jpg" class="card-img-top" alt="..." />
+              <div class="card-body text-center">
+                <h4 class="card-title">Trending App</h4>
+                <span class="badge bg-secondary badge-pill">Streamlit</span>
+                <span class="badge bg-secondary badge-pill">Python</span>
+                <span class="badge bg-secondary badge-pill mb-2">Time Series Forecasting</span
+                ><br />
+                <a href="https://github.com/Vishal2053/Trending-App" class="read-more-btn link">Read More</a>
+              </div>
+            </div>
+          </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- portfolio section ends here -->
+     
+<!-- Experience section starts -->
+<section class="experience mt-5 py-5" id="experience">
+  <div class="heading text-center">
+    <small>Experience</small>
+    <h3>Professional Journey</h3>
+  </div>
+  <div class="timeline-container row justify-content-center mt-5">
+    <!-- Timeline vertical line -->
+    <div class="timeline-line d-none d-md-block"></div>
+    <!-- Experience Card: AAYAAM AI -->
+    <div class="timeline-item col-12 col-md-4 mb-5" data-aos="fade-up">
+      <div class="card exp-card h-100 shadow border-0">
+        <div class="card-body position-relative">
+          <div class="exp-icon">
+            <i class="fas fa-robot"></i>
+          </div>
+          <h5 class="card-title mb-1" style="color:#6f34fe;">AI/ML Intern</h5>
+          <span class="text-muted fw-semibold">AAYAAM AI</span>
+          <div class="exp-date mb-2">Apr 2025 – Jun 2025</div>
+          <ul class="text-muted mt-2 mb-1" style="font-size: 0.97rem;">
+            <li>Collected, preprocessed, and trained AI models on image generation and motion capture datasets.</li>
+            <li>Built and integrated APIs to deploy AI models into the animation pipeline.</li>
+            <li>Tested AI-powered tools, analyzed results, and refined models based on feedback.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- Experience Card: ELLIPSIS -->
+    <div class="timeline-item col-12 col-md-4 mb-5" data-aos="fade-up" data-aos-delay="100">
+      <div class="card exp-card h-100 shadow border-0">
+        <div class="card-body position-relative">
+          <div class="exp-icon">
+            <i class="fas fa-chart-bar"></i>
+          </div>
+          <h5 class="card-title mb-1" style="color:#6f34fe;">Data Analytics Intern</h5>
+          <span class="text-muted fw-semibold">Ellipsis</span>
+          <div class="exp-date mb-2">Jul 2024 – Nov 2024</div>
+          <ul class="text-muted mt-2 mb-1" style="font-size: 0.97rem;">
+            <li>Analyzed large datasets using Python and SQL to uncover patterns and trends.</li>
+            <li>Created interactive dashboards in Power BI to present insights to stakeholders.</li>
+            <li>Used advanced Excel functions for data cleaning, summarization, and modeling.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- Experience Card: Infosys -->
+    <div class="timeline-item col-12 col-md-4 mb-5" data-aos="fade-up" data-aos-delay="200">
+      <div class="card exp-card h-100 shadow border-0">
+        <div class="card-body position-relative">
+          <div class="exp-icon">
+            <i class="fas fa-code"></i>
+          </div>
+          <h5 class="card-title mb-1" style="color:#6f34fe;">Python Project Intern</h5>
+          <span class="text-muted fw-semibold">Infosys Springboard</span>
+          <div class="exp-date mb-2">May 2024 – Jul 2024</div>
+          <ul class="text-muted mt-2 mb-1" style="font-size: 0.97rem;">
+            <li>Developed a Python-based system to extract payee name, date, account number, and amount from scanned bank checks.</li>
+            <li>Used Tesseract OCR and PDF parsing libraries (PyPDF2, PDFplumber) for accurate data extraction.</li>
+            <li>Implemented validation logic to ensure clean and structured output.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Experience section ends -->
+
+
+    <!-- blog section starts -->
+    <!--<section class="blog mt-5 pb-5" id="blog">
+      <div class="heading text-center pt-5">
+        <small>Latest News</small>
+        <h3>Blog & Articles</h3>
+      </div>
+      <div class="row justify-content-evenly px-4 mt-4" data-aos="fade-up">
+        <div class="blogpost col-md-4 col-10 mt-2 mt-md-0 game all">
+          <div class="card">
+            <img
+              src="images/2048game.png"
+              class="card-img-top rounded-4"
+              alt="..."
+            />
+            <div class="card-body px-4">
+              <small>By Pawan Kumavat</small
+              ><span class="ms-3">Mar 8,2022</span>
+              <h4 class="card-title">
+                <a href="">Quis autem vea eum iure reprehenderit</a>
+              </h4>
+              <p class="text-muted">
+                Dolor repellendus temporibus autem quibusdam officiis debitis
+                rerum nece aibus minima veniam.
+              </p>
+              <a href="#" class="read-more-btn link" data-bs-toggle="modal" data-bs-target="#exampleModal1">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="blogpost col-md-4 col-10 mt-5 mt-md-0 website all">
+          <div class="card">
+            <img
+              src="images/currency-converter.png"
+              class="card-img-top rounded-4"
+              alt="..."
+            />
+            <div class="card-body px-4">
+              <small>By Pawan Kumavat</small
+              ><span class="ms-3">Mar 8,2022</span>
+              <h4 class="card-title">
+                <a href="">Quis autem vea eum iure reprehenderit</a>
+              </h4>
+              <p class="text-muted">
+                Dolor repellendus temporibus autem quibusdam officiis debitis
+                rerum nece aibus minima veniam.
+              </p>
+              <a href="#" class="read-more-btn link" data-bs-toggle="modal" data-bs-target="#exampleModal2">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="blogpost col-md-4 col-10 mt-5 mt-md-0 webapp all">
+          <div class="card">
+            <img
+              src="images/dictionary.png"
+              class="card-img-top rounded-4"
+              alt="..."
+            />
+            <div class="card-body px-4">
+              <small>By Pawan Kumavat</small
+              ><span class="ms-3">Mar 8,2022</span>
+              <h4 class="card-title">
+                <a href="">Quis autem vea eum iure reprehenderit</a>
+              </h4>
+              <p class="text-muted">
+                Dolor repellendus temporibus autem quibusdam officiis debitis
+                rerum nece aibus minima veniam.
+              </p>
+              <a href="#" class="read-more-btn link" data-bs-toggle="modal" data-bs-target="#exampleModal3">Read More</a>
+            </div>
+          </div>
+        </div>
+         here we will make modals if Read more link is clicked the modal will popup 
+        <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              
+                <button type="button" class="btn-c rounded-pill" data-bs-dismiss="modal"><i class="bi bi-x-circle-fill"></i></button>
+              
+              <div class="modal-body px-4">
+                <div class="img">
+                  <img src="images/2048game.png" class="img-fluid" alt="">
+                </div>
+                <div class="content mt-3">
+                  <small>By Pawan Kumavat</small
+                    ><span class="text-muted ms-2">Mar 8,2022</span>
+                  <h4 class="card-title mt-3">Quis autem vea eum iure reprehenderit</h4>
+                  <div class="social-links mt-4">
+                      <button href="" class="rounded-pill dribble">
+                        <i class="bi bi-dribbble"></i>
+                      </button>
+                      <button href="" class="rounded-pill whatsapp">
+                        <i class="bi bi-whatsapp"></i>
+                      </button>
+                      <button href="" class="rounded-pill behance">
+                        <i class="bi bi-behance"></i>
+                      </button>
+                  </div>
+                  <p class="text-muted mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tempor eros a tellus auctor, nec suscipit nunc dignissim. Ut suscipit gravida augue sed elementum. Sed sed luctus nisl. Donec scelerisque nisi in sodales mattis. Vestibulum suscipit odio ac enim blandit sollicitudin. Aliquam ultrices sem quis urna placerat interdum. Etiam rutrum, quam sagittis tristique mollis, libero arcu scelerisque erat, eget tincidunt eros diam quis nunc.</p>
+                </div>
+              </div>
+              <div class="heading px-2">
+                <h3 class="fs-3 ms-3">Leave A Comment</h3>
+              </div>
+              <div class="contact-form ms-3 mt-3 pb-4 px-2">
+                <div class="mb-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="exampleFormControlInput1"
+                    placeholder="Name"
+                  />
+                </div>
+                <div class="mb-3">
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="exampleFormControlInput1"
+                    placeholder="E-mail"
+                  />
+                </div>
+                <div class="mb-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="exampleFormControlInput1"
+                    placeholder="Mobile No."
+                  />
+                </div>
+                <div class="mb-3">
+                  <textarea
+                    class="form-control"
+                    id="exampleFormControlTextarea1"
+                    placeholder="Message"
+                    rows="5"
+                  ></textarea>
+                </div>
+                <button class="c-btn h-btn mt-3 py-2 px-4 rounded-pill">
+                  Submit
+                </button>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+        <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              
+                <button type="button" class="btn-c rounded-pill" data-bs-dismiss="modal"><i class="bi bi-x-circle-fill"></i></button>
+              
+              <div class="modal-body px-4">
+                <div class="img">
+                  <img src="images/currency-converter.png" class="img-fluid" alt="">
+                </div>
+                <div class="content mt-3">
+                  <small>By Pawan Kumavat</small
+                    ><span class="text-muted ms-2 ms-md-0">Mar 8,2022</span>
+                  <h4 class="card-title mt-3">Quis autem vea eum iure reprehenderit</h4>
+                  <div class="social-links mt-4">
+                      <button href="" class="rounded-pill dribble">
+                        <i class="bi bi-dribbble"></i>
+                      </button>
+                      <button href="" class="rounded-pill whatsapp">
+                        <i class="bi bi-whatsapp"></i>
+                      </button>
+                      <button href="" class="rounded-pill behance">
+                        <i class="bi bi-behance"></i>
+                      </button>
+                  </div>
+                  <p class="text-muted mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tempor eros a tellus auctor, nec suscipit nunc dignissim. Ut suscipit gravida augue sed elementum. Sed sed luctus nisl. Donec scelerisque nisi in sodales mattis. Vestibulum suscipit odio ac enim blandit sollicitudin. Aliquam ultrices sem quis urna placerat interdum. Etiam rutrum, quam sagittis tristique mollis, libero arcu scelerisque erat, eget tincidunt eros diam quis nunc.</p>
+                </div>
+              </div>
+              <div class="heading px-2">
+                <h3 class="fs-3 ms-3">Leave A Comment</h3>
+              </div>
+              <div class="contact-form ms-3 mt-3 pb-4 px-2">
+                <div class="mb-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="exampleFormControlInput1"
+                    placeholder="Name"
+                  />
+                </div>
+                <div class="mb-3">
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="exampleFormControlInput1"
+                    placeholder="E-mail"
+                  />
+                </div>
+                <div class="mb-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="exampleFormControlInput1"
+                    placeholder="Mobile No."
+                  />
+                </div>
+                <div class="mb-3">
+                  <textarea
+                    class="form-control"
+                    id="exampleFormControlTextarea1"
+                    placeholder="Message"
+                    rows="5"
+                  ></textarea>
+                </div>
+                <button class="c-btn h-btn mt-3 py-2 px-4 rounded-pill">
+                  Submit
+                </button>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+        <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              
+                <button type="button" class="btn-c rounded-pill" data-bs-dismiss="modal"><i class="bi bi-x-circle-fill"></i></button>
+              
+              <div class="modal-body px-4">
+                <div class="img">
+                  <img src="images/dictionary.png" class="img-fluid" alt="">
+                </div>
+                <div class="content mt-3">
+                  <small>By Pawan Kumavat</small
+                    ><span class="text-muted ms-2 ms-md-0">Mar 8,2022</span>
+                  <h4 class="card-title mt-3">Quis autem vea eum iure reprehenderit</h4>
+                  <div class="social-links mt-4">
+                      <button href="" class="rounded-pill dribble">
+                        <i class="bi bi-dribbble"></i>
+                      </button>
+                      <button href="" class="rounded-pill whatsapp">
+                        <i class="bi bi-whatsapp"></i>
+                      </button>
+                      <button href="" class="rounded-pill behance">
+                        <i class="bi bi-behance"></i>
+                      </button>
+                  </div>
+                  <p class="text-muted mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tempor eros a tellus auctor, nec suscipit nunc dignissim. Ut suscipit gravida augue sed elementum. Sed sed luctus nisl. Donec scelerisque nisi in sodales mattis. Vestibulum suscipit odio ac enim blandit sollicitudin. Aliquam ultrices sem quis urna placerat interdum. Etiam rutrum, quam sagittis tristique mollis, libero arcu scelerisque erat, eget tincidunt eros diam quis nunc.</p>
+                </div>
+              </div>
+              <div class="heading px-2">
+                <h3 class="fs-3 ms-3">Leave A Comment</h3>
+              </div>
+              <div class="contact-form ms-3 mt-3 pb-4 px-2">
+                <div class="mb-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="exampleFormControlInput1"
+                    placeholder="Name"
+                  />
+                </div>
+                <div class="mb-3">
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="exampleFormControlInput1"
+                    placeholder="E-mail"
+                  />
+                </div>
+                <div class="mb-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="exampleFormControlInput1"
+                    placeholder="Mobile No."
+                  />
+                </div>
+                <div class="mb-3">
+                  <textarea
+                    class="form-control"
+                    id="exampleFormControlTextarea1"
+                    placeholder="Message"
+                    rows="5"
+                  ></textarea>
+                </div>
+                <button class="c-btn h-btn mt-3 py-2 px-4 rounded-pill">
+                  Submit
+                </button>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- blog section ends here -->
+
+    <!-- contact section starts -->
+    <section class="contact py-5" id="contact">
+      <div class="heading text-center">
+        <small>Get in Touch</small>
+        <h3>Any Questions? Feel Free to Contact</h3>
+      </div>
+      <div class="row justify-content-evenly mt-5">
+        <div class="col-md-5 col-10 contact-details" data-aos="slide-right">
+          <div class="row justify-content-evenly">
+            <div class="col-1">
+              <i class="bi bi-geo-alt-fill"></i>
+            </div>
+            <div class="col-11">
+              <p>Kannad, Chh. Sambhajinagar, Maharastra, India</p>
+            </div>
+          </div>
+          <div class="row justify-content-evenly">
+            <div class="col-1">
+              <i class="bi bi-telephone-fill"></i>
+            </div>
+            <div class="col-11">
+              <p>+91 7218724950</p>
+            </div>
+          </div>
+          <div class="row justify-content-evenly">
+            <div class="col-1">
+              <i class="bi bi-send-fill"></i>
+            </div>
+            <div class="col-11">
+              <p>vishalbhagwanmore12@gmail.com</p>
+            </div>
+          </div>
+          
+        </div>
+        <div class="col-md-5 col-10 mt-3 mt-md-0" data-aos="slide-left">
+          <div class="contact-form">
+            <form id="contactForm">
+              <div class="mb-3">
+                <input
+                  type="text"
+                  class="form-control"
+                  name="name"
+                  placeholder="Name"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <input
+                  type="email"
+                  class="form-control"
+                  name="email"
+                  placeholder="E-mail"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <input
+                  type="text"
+                  class="form-control"
+                  name="mobile"
+                  placeholder="Mobile No."
+                />
+              </div>
+              <div class="mb-3">
+                <textarea
+                  class="form-control"
+                  name="message"
+                  placeholder="Message"
+                  rows="5"
+                  required
+                ></textarea>
+              </div>
+              <button type="submit" class="c-btn h-btn mt-3 py-3 px-5 rounded-pill">
+                Submit
+              </button>
+            </form>
+            <div id="formMessage" class="mt-2"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- contact section ends here -->
+
+      <!-- now we will make back to top button when user click on it it will be redirected to top page  -->
+    <button
+      type="button"
+      class="btn btn-floating btn-lg rounded-pill"
+      id="btn-back-to-top"
+    >
+      <i class="bi bi-arrow-up"></i>
+    </button>
+
+    <!-- footer section starts  -->
+    <footer class="text-center text-muted py-4">
+      <h3 class="text-white pt-4" data-aos="fade-up">Portfolio</h3>
+      <div class="link-group mt-5" data-aos="fade-up">
+        <a href="#home">Home</a>
+        <div class="vr"></div>
+        <a href="#about">About</a>
+        <div class="vr"></div>
+        <a href="#service">Experties/a>
+        <div class="vr"></div>
+        <a href="#portfolio">Portfolio</a>
+        <div class="vr"></div>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="social-links mt-5" data-aos="fade-up">
+        <a href="https://github.com/Vishal2053" target="_blank" class="rounded-pill github" style="margin-right: 1rem; font-size: 1.2rem; background-color: #fff; padding: 14px 15px 10px 15px; color: #333;">
+          <i class="bi bi-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/vishal-more-4b9236228/" target="_blank" class="rounded-pill linkedin" style="margin-right: 1rem; font-size: 1.2rem; background-color: #fff; padding: 14px 15px 10px 15px; color: #0a66c2;">
+          <i class="bi bi-linkedin"></i>
+        </a>
+      </div>
+      <hr class="text-muted my-4" />
+
+      <p>© 2025 Vishal More. All rights reserved.</p>
+    </footer>
+    <!-- footer section ends here -->
+
+      <!-- bootstrap javascript cdn link  -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- AOS library javascript link  -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      // initializing AOS library
+      AOS.init({
+        duration: 1000,
+        offset: 50,
+      });
+    </script>
+    <!-- custom js file linking -->
+    <script src="js/script.js"></script>
+    
+  </body>
+</html>
