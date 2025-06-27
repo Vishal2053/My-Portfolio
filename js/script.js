@@ -161,7 +161,8 @@ const titles = [
   "ML Engineer",
   "Data Analyst",
   "AI Developer",
-  "Business Analyst"
+  "Business Analyst",
+  "Python Developer",
 ];
 let titleIndex = 0;
 const animatedTitle = document.getElementById("animated-title");
