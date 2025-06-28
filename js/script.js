@@ -141,10 +141,10 @@ document.getElementById('contactForm').addEventListener('submit', function(e) {
     email: this.email.value,
     message: this.message.value
   };
-  fetch('http://localhost:5000/contact', {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify(formData)
+  fetch('https://my-portfolio-zcyu.onrender.com/contact', {
+  method: 'POST',
+  headers: { 'Content-Type': 'application/json' },
+  body: JSON.stringify({ name, email, message })
   })
   .then(res => res.json())
   .then(data => {
