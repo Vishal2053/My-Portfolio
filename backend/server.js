@@ -6,9 +6,13 @@ const bodyParser = require('body-parser');
 const app = express();
 app.use(cors());
 app.use(bodyParser.json());
+
 require('dotenv').config({ path: '.env.local' });
 
 const emailPass = process.env.EMAIL_PASS;
+app.get('/', (req, res) => {
+  res.send('Welcome to the Portfolio Contact API');
+});
 
 app.post('/contact', async (req, res) => {
   const { name, email, message } = req.body;
@@ -37,5 +41,5 @@ app.post('/contact', async (req, res) => {
   }
 });
 
-const PORT = process.env.PORT || 10000;
+const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
