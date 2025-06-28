@@ -2,68 +2,75 @@
 let htmlProgress = document.querySelector(".html-css"),
   htmlValue = document.querySelector(".html-progress");
 
-let htmlStartValue = 0,
-  htmlEndValue = 90,
-  htmlspeed = 30;
+if (htmlProgress && htmlValue) {
+  let htmlStartValue = 0,
+    htmlEndValue = 90,
+    htmlspeed = 30;
 
-let progresshtml = setInterval(() => {
-  htmlStartValue++;
+  let progresshtml = setInterval(() => {
+    htmlStartValue++;
 
-  htmlValue.textContent = `${htmlStartValue}%`;
-  htmlProgress.style.background = `conic-gradient(#fca61f ${
-    htmlStartValue * 3.6
-  }deg, #ededed 0deg)`;
+    htmlValue.textContent = `${htmlStartValue}%`;
+    htmlProgress.style.background = `conic-gradient(#fca61f ${
+      htmlStartValue * 3.6
+    }deg, #ededed 0deg)`;
 
-  if (htmlStartValue == htmlEndValue) {
-    clearInterval(progresshtml);
-  }
-}, htmlspeed);
+    if (htmlStartValue == htmlEndValue) {
+      clearInterval(progresshtml);
+    }
+  }, htmlspeed);
+}
 
 // javasript progress circular bar 
 let javascriptProgress = document.querySelector(".javascript"),
   javascriptValue = document.querySelector(".javascript-progress");
 
-let javascriptStartValue = 0,
-  javascriptEndValue = 75,
-  jsspeed = 30;
+if (javascriptProgress && javascriptValue) {
+  let javascriptStartValue = 0,
+    javascriptEndValue = 75,
+    jsspeed = 30;
 
-let progressjs = setInterval(() => {
-  javascriptStartValue++;
+  let progressjs = setInterval(() => {
+    javascriptStartValue++;
 
-  javascriptValue.textContent = `${javascriptStartValue}%`;
-  javascriptProgress.style.background = `conic-gradient(#7d2ae8 ${
-    javascriptStartValue * 3.6
-  }deg, #ededed 0deg)`;
+    javascriptValue.textContent = `${javascriptStartValue}%`;
+    javascriptProgress.style.background = `conic-gradient(#7d2ae8 ${
+      javascriptStartValue * 3.6
+    }deg, #ededed 0deg)`;
 
-  if (javascriptStartValue == javascriptEndValue) {
-    clearInterval(progressjs);
-  }
-}, jsspeed);
+    if (javascriptStartValue == javascriptEndValue) {
+      clearInterval(progressjs);
+    }
+  }, jsspeed);
+}
 
 // php progress circular bar 
 let phpProgress = document.querySelector(".php"),
   phpValue = document.querySelector(".php-progress");
 
-let phpStartValue = 0,
-  phpEndValue = 80,
-  phpspeed = 30;
+if (phpProgress && phpValue) {
+  let phpStartValue = 0,
+    phpEndValue = 80,
+    phpspeed = 30;
 
-let progressphp = setInterval(() => {
-  phpStartValue++;
+  let progressphp = setInterval(() => {
+    phpStartValue++;
 
-  phpValue.textContent = `${phpStartValue}%`;
-  phpProgress.style.background = `conic-gradient(#20c997 ${
-    phpStartValue * 3.6
-  }deg, #ededed 0deg)`;
+    phpValue.textContent = `${phpStartValue}%`;
+    phpProgress.style.background = `conic-gradient(#20c997 ${
+      phpStartValue * 3.6
+    }deg, #ededed 0deg)`;
 
-  if (phpStartValue == phpEndValue) {
-    clearInterval(progressphp);
-  }
-}, phpspeed);
+    if (phpStartValue == phpEndValue) {
+      clearInterval(progressphp);
+    }
+  }, phpspeed);
+}
 
 function animateProgress(className, endValue, color = "#3f396d") {
   let progressBar = document.querySelector(`.${className}`);
   let progressValue = document.querySelector(`.${className}-progress`);
+  if (!progressBar || !progressValue) return;
   let currentValue = 0;
   let interval = setInterval(() => {
     currentValue++;
@@ -141,10 +148,10 @@ document.getElementById('contactForm').addEventListener('submit', function(e) {
     email: this.email.value,
     message: this.message.value
   };
-  fetch('https://my-portfolio-zcyu.onrender.com/contact', {
-  method: 'POST',
-  headers: { 'Content-Type': 'application/json' },
-  body: JSON.stringify({ name, email, message })
+  fetch('https://vishal-api.onrender.com/contact', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(formData) // <-- Use formData here
   })
   .then(res => res.json())
   .then(data => {
