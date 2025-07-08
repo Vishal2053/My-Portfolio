@@ -148,10 +148,12 @@ document.getElementById('contactForm').addEventListener('submit', function(e) {
     email: this.email.value,
     message: this.message.value
   };
+  document.getElementById('formLoading').style.display = 'block';
+  document.getElementById('submitBtn').disabled = true;
   fetch('https://vishal-api.onrender.com/contact', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify(formData) // <-- Use formData here
+    body: JSON.stringify(formData)
   })
   .then(res => res.json())
   .then(data => {
@@ -160,6 +162,10 @@ document.getElementById('contactForm').addEventListener('submit', function(e) {
   })
   .catch(() => {
     document.getElementById('formMessage').innerText = "Failed to send!";
+  })
+  .finally(() => {
+    document.getElementById('formLoading').style.display = 'none';
+    document.getElementById('submitBtn').disabled = false;
   });
 });
 

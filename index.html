@@ -856,6 +856,9 @@
           <div class="contact-form">
             <form id="contactForm">
               <div class="mb-3">
+                <label class="form-label">
+                  Name <span style="color: red;">*</span>
+                </label>
                 <input
                   type="text"
                   class="form-control"
@@ -865,6 +868,9 @@
                 />
               </div>
               <div class="mb-3">
+                <label class="form-label">
+                  E-mail <span style="color: red;">*</span>
+                </label>
                 <input
                   type="email"
                   class="form-control"
@@ -874,6 +880,9 @@
                 />
               </div>
               <div class="mb-3">
+                <label class="form-label">
+                  Mobile No.
+                </label>
                 <input
                   type="text"
                   class="form-control"
@@ -882,6 +891,9 @@
                 />
               </div>
               <div class="mb-3">
+                <label class="form-label">
+                  Message <span style="color: red;">*</span>
+                </label>
                 <textarea
                   class="form-control"
                   name="message"
@@ -890,9 +902,15 @@
                   required
                 ></textarea>
               </div>
-              <button type="submit" class="c-btn h-btn mt-3 py-3 px-5 rounded-pill">
+              <button type="submit" class="c-btn h-btn mt-3 py-3 px-5 rounded-pill" id="submitBtn">
                 Submit
               </button>
+              <div id="formLoading" class="mt-2" style="display:none;">
+                <div class="spinner-border text-primary" role="status" style="width: 2rem; height: 2rem;">
+                  <span class="visually-hidden">Loading...</span>
+                </div>
+                <span>Sending...</span>
+              </div>
             </form>
             <div id="formMessage" class="mt-2"></div>
           </div>
