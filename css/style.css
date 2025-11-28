@@ -397,50 +397,52 @@ footer .link-group a:hover{
 html, body {
   max-width: 100%;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
-/* Make wide elements respect container width */
-img, .card, .container-fluid, .row, .portfolio-body {
+/* Lazy loading images (modern browsers) */
+img {
+  loading: lazy;
   max-width: 100%;
-  box-sizing: border-box;
+  height: auto;
 }
 
-/* Avoid modals/timeline or other containers creating overflow */
-.modal, .modal-dialog, .timeline-container {
-  overflow-x: hidden;
+/* Improve button accessibility */
+button:hover, a:hover {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
 }
 
-/* Ensure back-to-top button sits inside viewport */
-#btn-back-to-top {
-  right: 24px;
-  left: auto;
-  transform: translateZ(0);
+/* Better link contrast */
+a {
+  color: #fca61f;
+  text-decoration: none;
+  transition: color 0.2s;
 }
 
-/* Animated title effect */
-.title-animate {
-  display: inline-block;
-  height: 3.5rem;
-  overflow: hidden;
-  position: relative;
-  vertical-align: bottom;
-}
-#animated-title {
-  display: inline-block;
-  animation: slideIn 0.5s;
-  will-change: transform, opacity;
+a:hover {
+  color: #6f34fe;
 }
 
-@keyframes slideIn {
-  from {
-    opacity: 0;
-    transform: translateY(40px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+/* Headings for better SEO */
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: 0.5rem;
+  font-weight: 700;
 }
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+/* ...existing code... */
 .skill-icons img {
   background: #fff;
   border-radius: 12px;
