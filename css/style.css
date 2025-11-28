@@ -393,6 +393,30 @@ footer .link-group a:hover{
     animation: pulse 3s infinite;
 }
 
+/* Prevent horizontal scroll / extra right whitespace */
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+/* Make wide elements respect container width */
+img, .card, .container-fluid, .row, .portfolio-body {
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+/* Avoid modals/timeline or other containers creating overflow */
+.modal, .modal-dialog, .timeline-container {
+  overflow-x: hidden;
+}
+
+/* Ensure back-to-top button sits inside viewport */
+#btn-back-to-top {
+  right: 24px;
+  left: auto;
+  transform: translateZ(0);
+}
+
 /* Animated title effect */
 .title-animate {
   display: inline-block;
