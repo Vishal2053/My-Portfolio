@@ -91,7 +91,7 @@ Open `index.html` in your browser, or use a local server (like Live Server in VS
 
 ## 📸 Screenshots
 
-> ![Portfolio Screenshot](images/banner-01.png)
+> ![Portfolio Screenshot](images/aibanner1.png)
 > _Home Section_
 
 ---

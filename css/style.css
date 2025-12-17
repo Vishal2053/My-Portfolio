@@ -47,8 +47,9 @@ body{
 }
 /* styling home section starts */
 .home{
-    background: linear-gradient(33deg, rgba(242,242,255,1) 0%, rgba(235,249,255,1) 100%);
+    background: #EDF1FE;
     padding: 30px 0px 0px 0px;
+    height: 60vh;
 }
 .home h2{
     font-size: 3rem;
