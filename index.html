@@ -369,7 +369,7 @@
           </ul>
         </div>
         <div class="d-none d-md-block">
-          <button class="c-btn h-btn rounded-pill px-4 py-2">
+          <button class="c-btn1 h-btn rounded-pill px-4 py-2">
             <a href="vishal_more_Data_Science_Resume.pdf" download="vishal_resume.pdf" style="text-decoration: none; color: #fff;">Resume</a>
           </button>
       </div>
@@ -396,7 +396,15 @@
         I'm also the creator of <strong>Autocure</strong>, a Python package for automated data cleaning and ML Model Training.
       </p>
       <button class="c-btn h-btn mt-3 py-3 px-5 rounded-pill">
-        <a href="#contact" style="text-decoration: none; color: #fff;">Hire Me</a>
+        <a href="#contact" onclick="trackHireClick()"style="text-decoration: none; color: #fff;">Hire Me</a>
+        <script>
+        function trackHireClick() {
+        gtag('event', 'hire_click', {
+            button_name: 'hire'
+          });
+        }
+      </script>
+
       </button>
     </div>
     <div class="col-10 col-md-4 d-none d-md-block">
